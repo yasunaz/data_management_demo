@@ -17,5 +17,6 @@ public class Demo {
 		System.out.println( faker.commerce().price()   );
 		System.out.println( faker.number().numberBetween(-10, -2));
 		System.out.println( faker.internet().emailAddress()  );
+		System.out.println("Hello");
 	}
 }
