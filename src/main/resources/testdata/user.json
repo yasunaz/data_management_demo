@@ -1,0 +1,16 @@
+{
+    "admin":{
+        "username":"lalalalhahah1990!",
+        "password":"Nijat12345!"
+    },
+
+    "manager":{
+        "username":"ocktoRegionalManager",
+        "password":"AzmatJira1990!!"
+    },
+    
+    "level1":{
+        "username":"ocktoRegionalLevel1User",
+        "password":"Gulzira1990OcktoInc2019!"
+    }
+}
