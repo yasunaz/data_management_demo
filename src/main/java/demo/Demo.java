@@ -1,16 +1,16 @@
 package demo;
 
-import com.github.javafaker.Faker;
+import utility.JsonUtils;
 
 public class Demo {
+	// main method
+	// Demonstration of using JSON data management
 	public static void main(String[] args) {
-		Faker faker = new Faker();
-		
-		System.out.println( faker.name().firstName() );
-		System.out.println( faker.company().name()   );
-		System.out.println( faker.address().countryCode() );
-		System.out.println( faker.commerce().price()   );
-		System.out.println( faker.number().numberBetween(-10, -2));
-		System.out.println( faker.internet().emailAddress()  );
+		String filePath = System.getProperty("user.dir") + "/src/main/resources/testdata/user.json";
+
+		JsonUtils jutils = new JsonUtils(filePath);
+
+		String username = jutils.data("manager.username");
+		System.out.println(username);
 	}
 }
